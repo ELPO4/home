@@ -6,13 +6,13 @@
   <title>Accounts</title>
   <style>
     body {
-    background-color: #9fe9ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column;
+     background-color: #9fe9ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
     }
 
     .carousel {
@@ -22,12 +22,21 @@
       overflow: hidden;
     }
 
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+    }
+
     .carousel img.active {
       opacity: 1;
     }
 
     .nav-buttons {
-      margin-top: 20px:
+      margin-top: 20px;
     }
 
     .nav-buttons button {
